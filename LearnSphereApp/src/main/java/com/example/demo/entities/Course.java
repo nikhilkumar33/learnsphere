@@ -75,5 +75,6 @@ public class Course
 		return "Course [id=" + id + ", name=" + name + ", prerequsit=" + prerequsit + ", descrip=" + descrip
 				+ ", price=" + price + ", lesson=" + lesson + "]";
 	}
+	
 			
 }

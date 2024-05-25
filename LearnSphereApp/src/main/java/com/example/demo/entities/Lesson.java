@@ -76,5 +76,6 @@ public class Lesson
 				+ ", attachment=" + attachment + ", course=" + course + "]";
 	}
 	
+	
 
 }

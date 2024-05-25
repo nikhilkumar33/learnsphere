@@ -12,15 +12,15 @@ import com.example.demo.services.LessonService;
 public class LessonController 
 {
 	@Autowired
-	LessonService lserv;
+	LessonService lessonserv;
 	
 	@PostMapping("/addlesson")
 	public String addLesson(@ModelAttribute Lesson lesson)
 	{
-		boolean leres=lserv.lessonExists(lesson.getLessonName());
-		if(leres==false)
+		boolean res=lessonserv.lessonExists(lesson.getLessonName());
+		if(res==false)
 		{
-			lserv.updateLesson(lesson);
+			lessonserv.updateLesson(lesson);
 			return "lessonsuccess";
 		}
 		else

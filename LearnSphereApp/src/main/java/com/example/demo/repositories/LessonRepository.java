@@ -6,5 +6,5 @@ import com.example.demo.entities.Lesson;
 
 public interface LessonRepository extends JpaRepository<Lesson, Integer>
 {
-	public Lesson findByName(String lessonName);
+	public Lesson findByLessonName(String lessonName);
 }

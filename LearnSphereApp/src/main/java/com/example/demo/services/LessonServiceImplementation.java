@@ -15,7 +15,7 @@ public class LessonServiceImplementation implements LessonService
 	@Override
 	public boolean lessonExists(String lessonName) 
 	{
-		if(lrepo.findByName(lessonName)==null)
+		if(lrepo.findByLessonName(lessonName)==null)
 		{
 			return false;
 		}
