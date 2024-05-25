@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/register" method="post">
+		<h2>Register</h2>
+		<label>User Name: </label>
+		<input type="text" name="username" required>
+		<label>Email Id: </label>
+		<input type="email" name="email" required>
+		<label>Password: </label>
+		<input type="password" name="password" required>
+		<label>Gender:    </label>
+		<div style="display: flex; ">
+		<div>
+		  <input type="radio" name="gender" value="male" required>
+		  <label>
+		    Male
+		  </label>
+		</div>
+		<div>
+		  <input type="radio" name="gender" value="female">
+		  <label>
+		    Female
+		  </label>
+		</div>
+		<div>
+		  <input type="radio" name="gender" value="other">
+		  <label>
+		    Other
+		  </label>
+		</div>
+		</div>
+		<label>Role:   </label>
+		<input type="radio" name="role" value="trainer" required> 
+		<label>Trainer</label>
+		<input type="radio" name="role" value="student" required>
+		<label>Student</label>
+		<label>Address : </label>
+		<textarea name="address" required></textarea>
+		<label>School Name : </label> <input type="text" name="schname"
+						placeholder="when you forgot your password" required />
+	
+		<input type="submit" value="REGISTER" >
+	</form>
+</body>
+</html>
