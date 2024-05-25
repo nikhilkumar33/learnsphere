@@ -7,7 +7,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
 
 @Entity
 public class Course 
@@ -20,7 +19,7 @@ public class Course
 	String descrip;
 	int price;
 	
-	@OneToMany
+	@ManyToMany
 	List<Lesson> lesson;
 	public Course() {
 		super();
