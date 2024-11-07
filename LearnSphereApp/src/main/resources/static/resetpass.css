@@ -1,0 +1,70 @@
+/* resetpass.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e54c8, #8f94fb); /* Neutral gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 280px; /* Reduced width */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased margin-bottom for more space */
+    font-size: 12px; /* Smaller font size */
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px; /* Smaller padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px; /* Smaller font size */
+    margin-bottom: 15px; /* Added margin-bottom for spacing between input fields */
+}
+
+.input-group input:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px; /* Smaller padding */
+    background-color: #4e54c8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly smaller font size */
+    transition: background-color 0.3s;
+    margin-top: 15px; /* Margin to separate from inputs */
+}
+
+.btn:hover {
+    background-color: #3a3fbd;
+}
+h5 {
+    color: #ff4c4c; /* Red color for error message */
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+}

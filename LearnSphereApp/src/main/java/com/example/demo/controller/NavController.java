@@ -36,4 +36,9 @@ public class NavController {
 	{
 		return "addlesson";
 	}
+	@GetMapping("/map-customerhome")
+	public String customerHome()
+	{
+		return "customerhome";
+	}
 }

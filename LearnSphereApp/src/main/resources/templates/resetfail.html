@@ -2,27 +2,21 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Beat Bazaar</title>
-<link href="register.css" rel="stylesheet">
+<title>Learn Sphere</title>
+<link href="resetpass.css" rel="stylesheet">
 </head>
 <body>
-	<form action="/resetpassword" method="post">
-		<div class="input-group">
-		<h5>Invalid Credentials. Please try again..</h5>
-		<label>Email Id : </label>
-		<br>
-		<input type="email" name="email" required />
-		<br><br>
-		<label>School Name : </label>
-		<br>
-		<input type="text" name="schname" required/>
-		<br><br>
-		<label>New Password : </label>
-		<br>
-		<input type="password" name="password" required/>
-		<br><br><br>
-		<button type="submit" class="btn">RESET</button>
-		</div>
-	</form>
+    <form action="/resetpassword" method="post">
+        <div class="input-group">
+        	<h5>Invalid Credentials. Please try again..</h5>
+            <label>Email Id:</label>
+            <input type="email" name="email" required>
+            <label>School Name:</label>
+            <input type="text" name="schname" required>
+            <label>New Password:</label>
+            <input type="password" name="password" required>
+            <button type="submit" class="btn">RESET</button>
+        </div>
+    </form>
 </body>
 </html>

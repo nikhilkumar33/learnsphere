@@ -2,19 +2,35 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Learn Sphere</title>
+<link href="trainerstyle.css" rel="stylesheet">
 </head>
 <body>
+	<header>
+        <div class="logo">
+            <img src="learnsphere.png" alt="Learn Sphere">
+        </div>
+        
+        <nav class="trainer">
+        	<a href="/map-lesson" title="Click to add a new lesson">Add Lesson</a>
+        	<a href="/viewcourse" title="Click to view existing courses">View Course</a>
+        </nav>
+        <nav class="setting">
+            <a href="/map-adminhome" title="Go to Home Page">Home</a>
+            <a href="/logout" title="Logout your account">Logout</a>
+        </nav>
+    </header>
+	
+	<form action="/addcourse" method="post" >
 	<h5>Course name already exists.</h5>
-	<form action="/addcourse" method="post">
 		<label>Course Name:</label>
-		<input type="text" name="name" />
+		<input type="text" name="name" required/>
 		<label>Course Pre-Requsite:</label>
-		<input type="text" name="prerequsit" />
+		<input type="text" name="prerequsit" required/>
 		<label>Course Description:</label>
-		<input type="text" name="descrip" />
+		<input type="text" name="descrip" required/>
 		<label>Course Price:</label>
-		<input type="number" name="price" />
+		<input type="number" name="price" required/>
 		<input type="submit" value="Add Course">
 	</form>
 </body>

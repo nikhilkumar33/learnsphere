@@ -1,5 +1,7 @@
 package com.example.demo.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,4 +32,14 @@ public class LessonServiceImplementation implements LessonService
 		lrepo.save(lesson);
 	}
 
+	@Override
+	public List<Lesson> getLessonsForCourse(int courseId) {
+		return lrepo.findByCourseId(courseId);
+		
+	}
+
+	@Override
+	public Lesson getLessonById(int lessonId) {
+		return lrepo.findById(lessonId).orElse(null);
+	}
 }

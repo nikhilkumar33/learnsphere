@@ -1,0 +1,106 @@
+/* mycourse.css */
+
+/* Reset some default styling */
+body, h1, h2, ul, li, label, button, form, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Course container styling */
+.course-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.course-container:hover {
+    transform: translateY(-5px);
+}
+
+.course-container label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+    font-size: 1em;
+}
+
+.course-container h2 {
+    margin: 5px 0 10px;
+    font-size: 1.5em;
+    color: #e74c3c;  /* New course name color */
+    text-transform: capitalize;
+}
+
+/* Lesson name label styling */
+.lesson-name {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #555;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Lesson list styling */
+.lesson-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    margin-top: 20px; /* Added margin top */
+}
+
+.lesson-list li {
+    margin-bottom: 10px;
+}
+
+.lesson-list form {
+    display: inline-block;
+}
+
+.lesson-list button {
+    background-color: #16a085;  /* Updated button color */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lesson-list button:hover {
+    background-color: #13856e;  /* Updated hover color */
+    transform: scale(1.05);
+}

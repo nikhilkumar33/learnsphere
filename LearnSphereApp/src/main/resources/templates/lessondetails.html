@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Sphere</title>
+    <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+    <h1>Lesson Details</h1>
+    <div>
+        <label class="label">Lesson Title:</label>
+        <h2 class="lesson-name" th:text="${lesson.lessonName}">Lesson Name</h2>
+        <label class="label">Topics Covered:</label>
+        <p class="topics" th:text="${lesson.topics}">Topics</p>
+        <div>
+            <video controls>
+                <source th:src="${lesson.video}" type="video/mp4">
+            </video>
+        </div>
+        <label class="label">Attachments:</label>
+        <p class="attachment" th:text="${lesson.attachment}">Attachment URL</p>
+    </div>
+    <div class="doubt-section">
+        <h3>Have any doubts? Ask here:</h3>
+        <form action="#" method="post">
+            <textarea name="doubt" placeholder="Type your question here..." rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

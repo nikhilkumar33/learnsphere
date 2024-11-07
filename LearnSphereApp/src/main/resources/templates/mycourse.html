@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+	<title>Learn Sphere</title>
+    <link href="mycourse.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>My Course</h1>
+    
+    <div th:each="course : ${courseList}" class="course-container">
+    	<label class="course-name">Course Name</label>
+       
+        <h2 class="course-name" th:text="${course.name}"></h2>
+        <label class="lesson-name">Lessons</label>
+        <ul class="lesson-list">
+        	 
+            <!-- Iterate over each lesson in the course -->
+            <li th:each="lesson : ${course.lessonList}">
+                <!-- Display lesson name as clickable button -->
+                <form th:action="@{/viewLesson}" method="get">
+                    <input type="hidden" name="lessonId" th:value="${lesson.id}"/>
+                    <button type="submit" th:text="${lesson.lessonName}">View Details</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

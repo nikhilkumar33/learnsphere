@@ -1,8 +1,11 @@
 package com.example.demo.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.entities.Course;
 import com.example.demo.entities.Users;
 import com.example.demo.repositories.UsersRepository;
 
@@ -85,6 +88,20 @@ public class UsersServiceImplementation implements UsersService
 
 	@Override
 	public void updateUser(Users user) {
+		urepo.save(user);
+		
+	}
+
+	@Override
+	public List<Course> purchasedCourses(String email) {
+		Users user=urepo.findByEmail(email);
+		return user.getCourses();
+	}
+
+	@Override
+	public void addCourseToUser(String email, Course course) {
+		Users user=urepo.findByEmail(email);
+		user.getCourses().add(course);
 		urepo.save(user);
 		
 	}
