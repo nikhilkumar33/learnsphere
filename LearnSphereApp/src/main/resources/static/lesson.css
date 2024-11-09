@@ -91,3 +91,13 @@ button:hover {
         padding: 15px;
     }
 }
+.home-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.home-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+}
