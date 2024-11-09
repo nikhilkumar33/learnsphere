@@ -103,3 +103,17 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #43cea2;
 }
+/* Anchor link style */
+a {
+    text-align: center;
+    display: block; /* Make it block-level to ensure it starts on a new line */
+    margin-top: 10px; /* Space between submit button and link */
+    font-size: 12px;
+    color: #185a9d; /* Matching color for consistency */
+    text-decoration: none; /* Remove default underline */
+}
+
+a:hover {
+    color: #43cea2; /* Change color on hover for better UX */
+    text-decoration: underline; /* Add underline on hover for clarity */
+}

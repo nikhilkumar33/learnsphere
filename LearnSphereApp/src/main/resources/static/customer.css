@@ -23,15 +23,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 header .logo img {
-    height: 50px;
+    height: 60px;
 }
 
 header .app-name {
-   font-size: 35px;
+   font-size: 50px;
     font-weight: bold;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -42,8 +42,9 @@ header .app-name {
 
 header nav a {
     color: #fff;
+    font-size: 23px;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 header nav a:hover {
