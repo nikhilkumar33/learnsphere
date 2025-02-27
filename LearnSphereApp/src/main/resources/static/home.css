@@ -37,7 +37,7 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif; /* Change the font family */
-    font-size: 55px; /* Increase font size */
+    font-size: 80px; /* Increase font size */
     font-weight: 700; /* Make the font bold */
     background: linear-gradient(135deg, #ffcc00, #ff6600); /* Gradient text color */
     -webkit-background-clip: text;
@@ -61,7 +61,7 @@ h1 {
     background: linear-gradient(45deg, #43cea2, #185a9d, #00f260, #0575e6, #ffdd00);
     background-size: 300% 300%;
     border-radius: 50px;
-    font-size: 15px;
+    font-size: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
     cursor: pointer;
@@ -76,13 +76,13 @@ h1 {
 
 
 .logo {
-    margin-top: -10px; /* Adjust as necessary for your layout */
+    margin-top: -50px; /* Adjust as necessary for your layout */
 }
 
 .logo img {
-    height: 60px; /* Adjust the size of the logo */
+    height: 180px; /* Adjust the size of the logo */
     width: auto;
 }
 header .logo img {
-    height: 50px;
+    height: 20px;
 }

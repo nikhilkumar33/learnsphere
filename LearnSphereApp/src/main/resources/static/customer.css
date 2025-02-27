@@ -10,8 +10,8 @@ body, h1, p, a, div, img {
 /* Set up the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+ 	background-color: #c6ffff;
+     color: #333;
     line-height: 1.6;
 }
 
