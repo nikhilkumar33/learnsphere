@@ -64,7 +64,7 @@ public class CourseController
 	public String studentCourse(Model model, HttpSession session) {
 	    String email = (String) session.getAttribute("email");
 	    List<Course> primeCourses = userv.purchasedCourses(email);
-	    if (primeCourses != null) {
+	    if (primeCourses != null && !primeCourses.isEmpty()) {
 	        // Iterate over each course to fetch and set its lessons
 	        for (Course course : primeCourses) {
 	            List<Lesson> lessons = lserv.getLessonsForCourse(course.getId());
@@ -73,7 +73,7 @@ public class CourseController
 	        model.addAttribute("courseList", primeCourses);
 	        return "mycourse";
 	    } else {
-	        return "viewcourse";
+	        return "nocourse";
 	    }
 	}
 
